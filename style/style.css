@@ -3,17 +3,83 @@ body {
     font-size: 14px;
     box-sizing: border-box;
 }
-.wrap-global {
+.global-wrap {
     width: 100%;
 }
 .bg-dark {
     background-color: #11255a;
 }
-@media screen and (min-width:1024px) {
-    .blocks {
-        border: 1px solid transparent;
-        width: 90%;
+.bg-container {
+    height: 100%;
+    background-image: url('../img/bg_header.jpg');
+    background-size: cover;
+}
+.bg-filter {
+    height: 100%;
+    background-color: rgba(12, 29, 81, 0.8);
+}
+.hide {
+    display: none;
+}
+.show {
+    display: initial;
+}
+.btn {
+    display: block;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 27px;
+}
+.light-btn {
+    background-color: #f8ba0a;
+}
+.text-white {
+    color: white;
+}
+.main-header-size {
+    font-size: 36px;
+}
+@media screen and (min-width:320px) {
+    .list-menu {
+        display: none;
+    }
+    .header-mobile-menu-ico {
+        font-size: 30px;
+        color: white;
+    }
+    .block-center {
+        width: 95%;
         margin: 0 auto;
+        padding-top: 20px;
+    }
+    .flex-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+    .main-header {
+        margin-bottom: 40px;
+        font-weight: 600;
+    }
+    .btn {
+        width: 100%;
+    }
+    .top-header {
+        margin-bottom: 30px;
+    }
+    .bottom-header {
+        margin-bottom: 40px;
+    }
+    .header-btn .btn {
+        margin-bottom: 20px;
+        color: black;
+    }
+    .header-btn .btn:hover {
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
     }
     .classes-block {
         padding: 80px 0;
@@ -22,7 +88,6 @@ body {
         text-align: center;
     }
     .classes-block-header {
-        font-size: 36px;
         margin-bottom: 80px;
     }
     .class-item-wrap {
@@ -52,34 +117,10 @@ body {
     .books-item-wrap {
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: center;
     }
     .books-block-header {
-        font-size: 36px;
         margin-bottom: 80px;
-    }
-    .book-item {
-        width: 400px;
-        height: 500px;
-        box-shadow: 0 5px 14px rgba(0, 0, 0, 0.3);
-        margin-bottom: 50px;
-        margin-right: 60px;;
-    }
-    .book-item-wrap {
-        display: flex;
-        justify-content: space-between;
-        padding: 10px;
-        margin-bottom: 60px;
-    }
-    .book-item-img-wrap {
-        margin-right: 20px;
-    }
-    .book-item-describe-name {
-        font-size: 21px;
-        margin-bottom: 20px;
-    }
-    .book-button-wrap {
-        text-align: center;
     }
     .btn-buy {
         width: 273px;
@@ -88,14 +129,54 @@ body {
         border: none;
         border-radius: 30px;
     }
+    .footer-block {
+        padding: 20px 0;
+    }
+    .footer-content {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .footer-content li {
+        margin-bottom: 20px;
+        color: white;
+        line-height: 150%;
+    }
+    .yu {
+        margin-right: 10px;
+    }
+}
+@media screen and (min-width:768px) {
+    .list-menu {
+        display: block;
+    }
+    .header-titles {
+        margin-bottom: 70px;
+    }
+    .header-btn {
+        display: flex;
+        justify-content: space-around;
+    }
+    .header-btn .btn {
+        width: 25%;
+    }
     .footer-content {
         display: flex;
         justify-content: space-between;
         color: white;
     }
+    .footer-content p {
+        line-height: 2;
+    }
+    .social {
+        padding-top: 20px;
+    }
+}
+@media screen and (min-width:1024px) {
+    
+    
 }
 @media screen and (min-width:1440px) {
     .book-item {
-        margin-right: 30px;;
+        margin-right: 15px;;
     }
 }
