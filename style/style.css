@@ -245,21 +245,21 @@ body {
     
 }
 @media screen and (min-width:1280px) {
-  .flex-header {
-      margin-bottom: 100px;
-  }
-  .header-title-mg-bottom {
-      margin-bottom: 60px;
-  }
-  .block-center {
-      width: 80%;
-  }
-  .book-item {
-      margin-right: 15px;;
-  }
+.flex-header {
+    margin-bottom: 100px;
+}
+.header-title-mg-bottom {
+    margin-bottom: 60px;
+}
+.block-center {
+    width: 80%;
+}
+.book-item {
+    margin-right: 15px;;
+}
 }
 @media screen and (min-width:1440px) {
   .block-center {
     width: 70%;
-}
+  }
 }
