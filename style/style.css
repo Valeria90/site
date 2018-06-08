@@ -68,6 +68,7 @@ body {
 }
 .btn {
   width: 100%;
+  box-sizing: border-box;
 }
 .header-btn .btn {
   margin-bottom: 20px;
@@ -169,7 +170,7 @@ body {
     display: none;
   }
   .header-titles {
-    margin-bottom: 70px;
+    margin-bottom: 90px;
   }
   .header-btn {
     display: flex;
@@ -179,6 +180,20 @@ body {
   .header-btn .btn {
     width: 25%;
     margin-bottom: 0;
+  }
+  .class-item-wrap {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+    flex-direction: row;
+    max-height: 500px;
+  }
+  .class-item {
+    width: 5%;
+  }
+  .class-item:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
   }
   .footer-content {
     display: flex;
@@ -194,6 +209,10 @@ body {
   }
   .social {
     padding-top: 20px;
+  }
+  .yu:hover,
+  .fb:hover {
+    color: #f8ba0a
   }
 }
 @media screen and (min-width:1024px) {
@@ -226,16 +245,21 @@ body {
     
 }
 @media screen and (min-width:1280px) {
-    .flex-header {
-        margin-bottom: 100px;
-    }
-    .header-title-mg-bottom {
-        margin-bottom: 60px;
-    }
-    .block-center {
-        width: 80%;
-    }
-    .book-item {
-        margin-right: 15px;;
-    }
+  .flex-header {
+      margin-bottom: 100px;
+  }
+  .header-title-mg-bottom {
+      margin-bottom: 60px;
+  }
+  .block-center {
+      width: 80%;
+  }
+  .book-item {
+      margin-right: 15px;;
+  }
+}
+@media screen and (min-width:1440px) {
+  .block-center {
+    width: 70%;
+}
 }
