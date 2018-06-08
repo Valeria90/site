@@ -43,7 +43,7 @@ body {
   font-size: 36px;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (min-width:320px) {
 .list-menu {
   display: none;
 }
@@ -149,6 +149,17 @@ body {
 }
 }
 @media screen and (min-width:768px) {
+  .block-center {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.flex-header {
+  margin-bottom: 60px;
+}
+.header-title-mg-bottom {
+  margin-bottom: 60px;
+}
   .header-menu {
     display: flex;
   }
@@ -176,7 +187,7 @@ body {
   .header-btn {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
   .header-btn .btn {
     width: 25%;
@@ -217,6 +228,15 @@ body {
   }
 }
 @media screen and (min-width:1024px) {
+  .block-center {
+    padding-top: 100px;
+}
+.flex-header {
+  margin-bottom: 120px;
+}
+.header-title-mg-bottom {
+  margin-bottom: 80px;
+}
   .header-content {
     display: flex;
     justify-content: space-between;
@@ -225,8 +245,11 @@ body {
     display: block;
     color: white;
   }
+  .header-titles {
+    margin-bottom: 150px;
+}
   .numbers {
-    margin-bottom: 45px;
+    margin-bottom: 80px;
   }
   .num {
     font-size: 26px;
@@ -235,8 +258,11 @@ body {
     margin-top: 15px;
   }
   .header-btn {
-    margin-bottom: 40px;
-  }
+    margin-bottom: 100px;
+}
+.footer-content p {
+  line-height: 2.5;
+}
   .footer-content {
     justify-content: space-between;
   }
@@ -248,9 +274,6 @@ body {
 @media screen and (min-width:1280px) {
 .flex-header {
     margin-bottom: 100px;
-}
-.header-title-mg-bottom {
-    margin-bottom: 60px;
 }
 .block-center {
     width: 80%;
