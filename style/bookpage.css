@@ -1,0 +1,106 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    min-width: 320px;
+  }
+  .global-wrap {
+    width: 100%;
+  }
+  @media screen and (min-width:320px) {
+  .header-bg-wrap {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .bookpage-header-wrap {
+    background-color: #11255a;
+  }
+  .bookpage-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+  }
+  .bookpage-header-buttons {
+    display: flex;
+    align-items: center;
+  }
+  .bookpage-bth-header {
+    display: block;
+    box-sizing: border-box;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    width: 50px;
+    height: 30px;
+    margin-left: 10px;
+    color: white;
+  }
+  .bookpage-block-wrap {
+
+  }
+  .bookpage-search {
+    margin: 30px 0;
+    text-align: center;
+  }
+  .search-book {
+    box-sizing: border-box;
+    padding-left: 15px;
+    width: 165px;
+    height: 40px;
+    margin-right: 9px;
+    border: none;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    font-size: 16px;
+    color: gray;
+  }
+  .search-button {
+    background-color: #f8ba0a;
+    width: 42px;
+    height: 42px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  }
+  .bookpage-book-list {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .bookpage-book-item {
+    min-width: 220px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.3);
+}
+  .bookpage-cover-wrap {
+    margin: 10px 0;
+}
+  .bookpage-book-description {
+    margin: 10px 0;
+}
+  .bookname {
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width:768px) {
+  .header-bg-wrap {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .bookpage-bth-header {
+    width: 100px;
+    height: 30px;
+  }
+  .search-book {
+    width: 350px;
+    height: 40px;
+    margin-right: 40px;
+  }
+  .search-button {
+    width: 100px;
+    height: 42px;
+  }
+}
