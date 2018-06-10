@@ -1,22 +1,67 @@
-.book-item {
-    width: 400px;
-    height: 500px;
-    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.3);
-    margin-bottom: 50px;
+@media screen and (min-width:320px) {
+    .book-item {
+        width: 300px;
+        text-align: center;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        margin-bottom: 20px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .book-item-img-wrap {
+        margin-bottom: 20px;
+    }
+    .book-item-description-name {
+        font-size: 150%;
+    }
+    .book-item-description-author {
+        font-weight: 600;
+    }
+    .book-item-description-name,
+    .book-item-description-author,
+    .book-description {
+        max-width: 80%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .book-description {
+        text-align: justify;
+    }
+    .btn-buy {
+        margin: 20px 0;
+        background-color: #f8ba0a;
+        width: 90px;
+        height: 40px;
+        border: 1px solid transparent;
+        border-radius: 5px;
+    }
+    .btn-buy:hover {
+        background-color: #11255a;
+        border-color: white;
+        color: white;
+    }
 }
-.book-item-wrap {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    margin-bottom: 60px;
+@media screen and (min-width:768px) {
+    .book-item {
+        width: 700px;
+    }
+    .book-item-wrap {
+        display: flex;
+        padding: 20px;
+    }
+    .book-item-description-name,
+    .book-item-description-author,
+    .book-description {
+        margin-bottom: 20px;
+    }
+    .book-item-description-name,
+    .book-item-description-author {
+        text-align: left;
+    }
 }
-.book-item-img-wrap {
-    margin-right: 20px;
-}
-.book-item-describe-name {
-    font-size: 21px;
-    margin-bottom: 20px;
-}
-.book-button-wrap {
-    text-align: center;
+@media screen and (min-width:1024px) {
+    .book-item {
+        width: 900px;
+    }
+    .book-item-wrap {
+        padding: 30px;
+    }
 }
